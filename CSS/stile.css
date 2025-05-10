@@ -1,0 +1,256 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Neon+Tech&display=swap');
+
+/* Tabella parte intestazione */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Neon Tech', sans-serif; /* Applicato a tutto l'HTML */
+    background-color: light-blue;
+}
+
+/* Tabella parte centrale */
+body {
+    background-color: lightblue;
+}
+
+/* SEZIONE HERO */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+    font-size: 25px;
+}
+
+/*  SCRITTA CENTRALE */
+.overlay h1 {
+    font-size: 50px; /* Aumentato rispetto a prima */
+    font-weight: bold;
+}
+
+/* TOP BAR */
+.top-bar {
+    position: absolute;
+    top: 10px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar nav {
+    display: flex;
+    align-items: center;
+}
+
+.top-bar a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.top-bar a:hover {
+    text-decoration: underline;
+}
+
+/* MENU */
+.menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px 12px;
+    border-radius: 10px;
+}
+
+.menu-box {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    min-width: 250px;
+    max-height: 400px;
+    overflow-y: auto;  /* Barra di scorrimento dedicata */
+    z-index: 10;
+}
+
+.menu-container:hover .menu-box {
+    display: block;
+}
+
+.menu-box a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.menu-box a:hover {
+    background: #ddd;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+.search-container input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.search-container input[type="text"]:focus {
+    outline: none;
+    border-color: #007BFF;
+}
+
+
+/* SEZIONE ARGOMENTI */
+.content {
+    padding: 40px 10%;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 270px); /* Box più larghi */
+    gap: 30px; /* Maggiore distanza tra le box */
+    justify-content: center;
+    padding: 20px;    
+    background-color: lightblue;
+}
+
+.box {
+    background: white;
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    width: 270px; /* Larghezza migliorata */
+}
+
+.box img {
+    width: 100%;
+    height: 170px; /* Altezza aumentata per migliorare la visibilità */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* EFFETTO ILLUMINAZIONE BANDIERA ITALIANA (più intenso) */
+.box:nth-child(3n+1):hover {
+    box-shadow: 0px 0px 25px rgba(0, 255, 0, 1); /* Verde più intenso */
+    transform: scale(1.08);
+}
+
+.box:nth-child(3n+2):hover {
+    box-shadow: 0px 0px 25px rgba(000, 000, 000, 1); /* Nero più visibile */
+    transform: scale(1.08);
+}
+
+.box:nth-child(3n):hover {
+    box-shadow: 0px 0px 25px rgba(255, 0, 0, 1); /* Rosso più intenso */
+    transform: scale(1.08);
+}
+
+/* FOOTER */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background: white;
+    width: 50%;
+    margin: auto;
+}
+
+.argomento-section {
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.argomento-section h2 {
+    color: #004466;
+    margin-top: 2rem;
+}
+
+.argomento-section p, .argomento-section li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.argomento-section ul {
+    margin-left: 1.5rem;
+}
+
+.argomento-section .immagine {
+    display: block;
+    max-width: 100%;
+    margin: 1rem auto;
+    border-radius: 10px;
+}
+
+.argomento-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.argomento-section table, th, td {
+    border: 1px solid #ccc;
+}
+
+.argomento-section th, td {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+img {
+    background: none;
+}
