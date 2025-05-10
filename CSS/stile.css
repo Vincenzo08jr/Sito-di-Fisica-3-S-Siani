@@ -75,39 +75,65 @@ body {
 }
 
 
-/* Stile per il contenuto del menu */
-.menu-box a {
-  display: block;
-  margin: 5px 0;
-  cursor: pointer;
-  text-decoration: none;
+/* Stile per il menu principale */
+.menu-box {
+  font-family: Arial, sans-serif;
+  width: 250px;
+  background-color: #333;
+  padding: 10px;
 }
 
-/* Sottomenù principale e secondari */
-.submenu, .submenu2 {
-  display: none;  /* Nasconde i sottomenù */
+.menu-box a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+.menu-box a:hover {
+  background-color: #575757;
+}
+
+/* Sottomenù di primo livello */
+.submenu {
+  display: none;
+  background-color: #444;
   padding-left: 20px;
 }
 
-/* Quando passi il cursore sopra il menu, mostra il sottomenù */
-.submenu-toggle:hover + .submenu, .submenu2 a:hover + .submenu2 {
+.submenu a {
+  padding: 8px 10px;
+}
+
+.submenu a:hover {
+  background-color: #666;
+}
+
+/* Sottomenù di secondo livello */
+.submenu2 {
+  display: none;
+  background-color: #555;
+  padding-left: 20px;
+}
+
+.submenu2 a {
+  padding: 8px 10px;
+}
+
+.submenu2 a:hover {
+  background-color: #777;
+}
+
+/* Visibilità del sottomenù quando si passa sopra */
+.submenu-toggle:hover + .submenu,
+.submenu-toggle:focus + .submenu {
   display: block;
 }
 
-.submenu-toggle {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-.submenu a, .submenu2 a {
+.submenu a:hover + .submenu2 {
   display: block;
-  margin: 5px 0;
-  text-decoration: none;
 }
 
-.submenu a:hover, .submenu2 a:hover {
-  color: #007bff;
-}
 
 
 /* Barra di ricerca */
