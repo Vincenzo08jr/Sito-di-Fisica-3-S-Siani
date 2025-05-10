@@ -93,7 +93,7 @@ body {
   background-color: #575757;
 }
 
-/* Sottomenù di primo livello */
+/* Sottomenù di primo e secondo livello */
 .submenu {
   display: none;
   background-color: #444;
@@ -108,7 +108,16 @@ body {
   background-color: #666;
 }
 
-/* Sottomenù di secondo livello */
+/* Extra */
+.submenu-toggle {
+  cursor: pointer;
+}
+
+/* Stile per quando il sottomenù è visibile */
+.submenu.visible {
+  display: block;
+}
+
 .submenu2 {
   display: none;
   background-color: #555;
@@ -123,15 +132,6 @@ body {
   background-color: #777;
 }
 
-/* Visibilità del sottomenù quando si passa sopra */
-.submenu-toggle:hover + .submenu,
-.submenu-toggle:focus + .submenu {
-  display: block;
-}
-
-.submenu a:hover + .submenu2 {
-  display: block;
-}
 
 /* Barra di ricerca */
 .search-container {
