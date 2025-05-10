@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Forze</title>
+    <link rel="stylesheet" href="CSS/stile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Neon+Tech&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="IMMAGINI/favicon.ico">
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+<style>
+  .argomento-section {
+      background-color: #ffffffdd;
+      padding: 30px;
+      margin: 40px auto;
+      border-radius: 20px;
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+  }
+
+  .argomento-section h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #2980b9;
+      padding-bottom: 5px;
+  }
+
+  .argomento-section p,
+  .argomento-section ul,
+  .argomento-section table {
+      margin-bottom: 20px;
+  }
+
+  .argomento-section ul {
+      padding-left: 20px;
+  }
+
+  .immagine {
+      max-width: 100%;
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+  }
+
+  .esempio {
+      background-color: #ecf0f1;
+      padding: 15px;
+      border-left: 5px solid #3498db;
+      margin-bottom: 20px;
+      border-radius: 10px;
+  }
+
+  .esempio h3 {
+      margin-top: 0;
+      color: #2980b9;
+  }
+
+  table {
+      width: 100%;
+      border-collapse: collapse;
+  }
+
+  table, th, td {
+      border: 1px solid #999;
+  }
+
+  th, td {
+      padding: 10px;
+      text-align: center;
+  }
+
+  th {
+      background-color: #3498db;
+      color: white;
+  }
+</style>
+</head>
+
+<body>
+
+    <!-- SEZIONE HERO -->
+    <div class="hero">
+        <img src="IMMAGINI/sfondo2.jpeg" alt="Sfondo" class="hero-img">
+        <div class="overlay">
+            <div class="top-bar">
+                <span>2025</span>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="chi-siamo.html">Chi siamo</a>
+                    <a href="crediti.html">Crediti</a> |
+                    <div class="menu-container">
+                        <span class="menu-icon">☰</span>
+                        <div class="menu-box">
+    <a href="index.html">Home</a>
+    <a href="1-principio.html">1° Principio della Dinamica</a>
+    <a href="2-principio.html">2° Principio della Dinamica</a>
+    <a href="3-principio.html">3° Principio della Dinamica</a>
+    <a href="Forze.html">Forze conservative e dissipative</a>
+    <a href="lavoro.html">Lavoro</a>
+    <a href="cinetica.html">Energia cinetica</a>
+    <a href="potenziale.html">Energia potenziale</a>
+    <a href="meccanica.html">Energia meccanica</a>
+    <a href="chicco.html">Storie di Chicco</a>
+</div>
+
+                    </div>
+                </nav>
+            </div>
+            <h1 class="title">Le Forze</h1>
+        </div>
+    </div>
+
+    <!-- SEZIONE ARGOMENTI -->
+    <div class="argomento-section">
+        <h2>Cos'è una forza?</h2>
+        <p>In fisica, una <strong>forza</strong> è tutto ciò che può cambiare lo stato di moto o di quiete di un corpo. Le forze si rappresentano con frecce (vettori), perché hanno:</p>
+        <ul>
+            <li><strong>intensità</strong> (quanto è forte),</li>
+            <li><strong>direzione</strong> (la linea lungo cui agisce),</li>
+            <li><strong>verso</strong> (da che parte va).</li>
+        </ul>
+        <p>Un esempio semplice: se spingi un carrello, stai applicando una forza.</p>
+
+        <h2>Forze Conservative</h2>
+        <p>Una forza è <strong>conservativa</strong> se il lavoro che compie dipende solo dalla posizione iniziale e finale del corpo, non dal percorso che fa.</p>
+        <p>Le più comuni sono:</p>
+        <ul>
+            <li><strong>Forza gravitazionale</strong> (es: una palla che cade),</li>
+            <li><strong>Forza elastica</strong> (es: una molla compressa),</li>
+            <li><strong>Forza elettrica</strong>.</li>
+        </ul>
+
+        <p>Le formule importanti:</p>
+        <p>\(\oint \vec{F} \cdot d\vec{s} = 0\)</p>
+        <p>\(\vec{F} = -\nabla U\)</p>
+        <p><strong>Energia potenziale:</strong></p>
+        <ul>
+            <li>Gravitazionale: \( U = mgh \)</li>
+            <li>Elastica: \( U = \frac{1}{2}kx^2 \)</li>
+        </ul>
+
+        <img src="IMMAGINI/oscillatore.png" class="immagine" alt="Oscillatore armonico">
+        <p><em>Grafico di un oscillatore armonico (es. molla che vibra)</em></p>
+
+        <p>In assenza di forze dissipative, l'<strong>energia meccanica totale</strong> si conserva:</p>
+        <p>\( E = K + U = \text{costante} \)</p>
+
+        <h2>Forze Dissipative</h2>
+        <p>Le <strong>forze dissipative</strong> fanno perdere energia meccanica trasformandola in altre forme (soprattutto calore).</p>
+        <p>Dipendono dal <strong>percorso</strong>, e agiscono contro il moto.</p>
+        <p>Esempi:</p>
+        <ul>
+            <li><strong>Attrito</strong> tra superfici (es: frenare una bici),</li>
+            <li><strong>Resistenza dell’aria</strong> (es: una foglia che cade),</li>
+            <li><strong>Smorzamenti</strong> nei sistemi oscillanti (es: un pendolo che si ferma).</li>
+        </ul>
+
+        <p>Formule importanti:</p>
+        <p>\( \vec{F}_a = -\mu N \hat{v} \)</p>
+        <p>\( \Delta E = L_{\text{dissipativo}} < 0 \)</p>
+
+        <img src="IMMAGINI/attrito.png" alt="Animazione dell'attrito" class="immagine">
+        <p><em>Esempio dell'attrito di un corpo sul piano orizzontale</em></p>
+
+        <h2>Confronto tra Forze Conservative e Dissipative</h2>
+        <table>
+            <tr>
+                <th>Forze Conservative</th>
+                <th>Forze Dissipative</th>
+            </tr>
+            <tr>
+                <td>Lavoro indipendente dal percorso</td>
+                <td>Lavoro dipende dal percorso</td>
+            </tr>
+            <tr>
+                <td>Conservano l'energia meccanica</td>
+                <td>Fanno perdere energia (calore, rumore...)</td>
+            </tr>
+            <tr>
+                <td>Es: gravità, molla</td>
+                <td>Es: attrito, resistenza dell’aria</td>
+            </tr>
+        </table>
+
+        <h2>Esempi di Problemi Svolti</h2>
+
+        <div class="esempio">
+            <h3>1. Lavoro di una forza costante</h3>
+            <p>Un carrello viene spinto con una forza costante di 20 N per 5 metri in linea retta. Calcola il lavoro compiuto dalla forza.</p>
+            <p><strong>Soluzione:</strong></p>
+            <p>\( L = F \cdot s = 20 \cdot 5 = 100 \, \text{J} \)</p>
+        </div>
+
+        <div class="esempio">
+            <h3>2. Energia potenziale gravitazionale</h3>
+            <p>Una palla di 2 kg viene sollevata a 3 metri di altezza. Qual è la sua energia potenziale gravitazionale?</p>
+            <p><strong>Soluzione:</strong></p>
+            <p>\( U = mgh = 2 \cdot 9.8 \cdot 3 = 58.8 \, \text{J} \)</p>
+        </div>
+
+        <div class="esempio">
+            <h3>3. Energia dissipata per attrito</h3>
+            <p>Un blocco scivola su un piano orizzontale per 4 metri sotto l'effetto di una forza di attrito di 5 N. Quanta energia si dissipa?</p>
+            <p><strong>Soluzione:</strong></p>
+            <p>\( \Delta E = -F_a \cdot s = -5 \cdot 4 = -20 \, \text{J} \)</p>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <hr>
+        <p>© 2025 Sito sviluppato dalla classe 3-S del istituto Giancarlo Siani Napoli. Tutti i diritti riservati.</p>
+    </footer>
+
+</body>
+</html>

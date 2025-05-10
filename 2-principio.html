@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2° Principio della Dinamica</title>
+    <link rel="stylesheet" href="CSS/stile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Neon+Tech&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="IMMAGINI/favicon.ico">
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <style>
+        .argomento-section {
+            background-color: #ffffffdd;
+            padding: 30px;
+            margin: 40px auto;
+            border-radius: 20px;
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+        }
+
+        .argomento-section h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #2980b9;
+            padding-bottom: 5px;
+        }
+
+        .argomento-section p,
+        .argomento-section ul,
+        .argomento-section table {
+            margin-bottom: 20px;
+        }
+
+        .argomento-section ul {
+            padding-left: 20px;
+        }
+
+        .immagine {
+            max-width: 100%;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        .esempio {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-left: 5px solid #3498db;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        .esempio h3 {
+            margin-top: 0;
+            color: #2980b9;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #999;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- SEZIONE HERO -->
+    <div class="hero">
+        <img src="IMMAGINI/sfondo2.jpeg" alt="Sfondo" class="hero-img">
+        <div class="overlay">
+            <div class="top-bar">
+                <span>2025</span>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="chi-siamo.html">Chi siamo</a>
+                    <a href="crediti.html">Crediti</a> |
+                    <div class="menu-container">
+                        <span class="menu-icon">☰</span>
+                        <div class="menu-box">
+                            <a href="index.html">Home</a>
+                            <a href="1-principio.html">1° Principio della Dinamica</a>
+                            <a href="2-principio.html">2° Principio della Dinamica</a>
+                            <a href="3-principio.html">3° Principio della Dinamica</a>
+                            <a href="Forze.html">Forze conservative e dissipative</a>
+                            <a href="lavoro.html">Lavoro</a>
+                            <a href="cinetica.html">Energia cinetica</a>
+                            <a href="potenziale.html">Energia potenziale</a>
+                            <a href="meccanica.html">Energia meccanica</a>
+                            <a href="chicco.html">Storie di Chicco</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+			<h1 class="title">DINAMICA</h1>
+            <h1 class="title">2° Principio</h1>
+        </div>
+    </div>
+
+    <!-- SEZIONE ARGOMENTO -->
+    <div class="argomento-section">
+        <h2>Cos'è il Secondo Principio della Dinamica?</h2>
+        <p>Il <strong>Secondo Principio della Dinamica</strong>, enunciato da Newton, spiega come cambia il movimento di un corpo quando su di esso agisce una forza.</p>
+
+        <p>La legge afferma che:</p>
+        <p><strong>“L'accelerazione di un corpo è direttamente proporzionale alla forza risultante che agisce su di esso e inversamente proporzionale alla sua massa.”</strong></p>
+
+        <p>La formula che lo rappresenta è:</p>
+        <p>\( \vec{F} = m \cdot \vec{a} \)</p>
+
+        <ul>
+            <li>\( \vec{F} \): forza risultante (in Newton, N)</li>
+            <li>\( m \): massa (in chilogrammi, kg)</li>
+            <li>\( \vec{a} \): accelerazione (in m/s²)</li>
+        </ul>
+
+        <p>In parole semplici: <strong>più grande è la forza applicata, maggiore sarà l’accelerazione</strong>.<br> 
+			Ma se la massa è molto grande, servirà più forza per ottenere la stessa accelerazione.</p>
+
+        <img src="IMMAGINI/2-principio.png" alt="Secondo principio della dinamica" class="immagine">
+
+      <h2>Confronto tra 1° e 2° Principio</h2>
+        <table>
+            <tr>
+                <th>1° Principio</th>
+                <th>2° Principio</th>
+            </tr>
+            <tr>
+                <td>Un corpo fermo o in moto rettilineo uniforme resta tale se non agiscono forze.</td>
+                <td>Un corpo accelera se su di esso agisce una forza risultante diversa da zero.</td>
+            </tr>
+            <tr>
+                <td>Spiega cosa succede in assenza di forza.</td>
+                <td>Spiega cosa succede in presenza di forza.</td>
+            </tr>
+            <tr>
+                <td>Formula: nessuna forza → velocità costante</td>
+                <td>Formula: \( \vec{F} = m \cdot \vec{a} \)</td>
+            </tr>
+        </table>
+
+        <h2>📌 Esempi Svolti</h2>
+
+        <div class="esempio">
+            <h3>1. Calcolo della forza</h3>
+            <p>Un corpo di massa 4 kg accelera a 3 m/s². Qual è la forza risultante?</p>
+            <p><strong>Soluzione:</strong></p>
+            <p>\( F = 4 \cdot 3 = 12 \, \text{N} \)</p>
+        </div>
+
+        <div class="esempio">
+            <h3>2. Trova la massa</h3>
+            <p>Un corpo subisce una forza di 10 N e accelera a 2 m/s². Qual è la sua massa?</p>
+            <p><strong>Soluzione:</strong></p>
+            <p>\( m = \frac{F}{a} = \frac{10}{2} = 5 \, \text{kg} \)</p>
+        </div>
+
+        <div class="esempio">
+            <h3>3. Calcolo dell'accelerazione</h3>
+            <p>Una forza di 18 N viene applicata a un oggetto di 6 kg. Quale sarà la sua accelerazione?</p>
+            <p><strong>Soluzione:</strong></p>
+            <p>\( a = \frac{F}{m} = \frac{18}{6} = 3 \, \text{m/s}^2 \)</p>
+        </div>
+
+        <div class="esempio">
+            <h3>4. Accelerazione nulla</h3>
+            <p>Un oggetto su cui le forze si bilanciano ha massa 10 kg. Che accelerazione ha?</p>
+            <p><strong>Soluzione:</strong></p>
+            <p>Se la forza totale è zero, \( a = 0 \). Il corpo resta fermo o va a velocità costante.</p>
+        </div>
+
+		<h2>📌 Presentazioni et al.</h2>
+				
+        <div class="esempio">
+         <h3>🔹 Il Secondo Principio della Dinamica
+          <a href="PPT/2 Principio Dinamica.pdf">in PDF</a></h3>
+        </div>
+		
+        <div class="esempio">
+            <h3>🔹 Foglio Excel con esempi e calcoli
+            <a href="EXCEL/2pincipio.xlsx" download> Scarica il file Excel</a></h3>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <hr>
+        <p>© 2025 Sito sviluppato dalla classe 3-S del istituto Giancarlo Siani Napoli. Tutti i diritti riservati.</p>
+    </footer>
+
+</body>
+</html>
