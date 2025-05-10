@@ -105,7 +105,11 @@ body {
 
 .menu-container:hover .menu-box {
     display: block;
+    position: absolute; /* Posiziona in maniera assoluta */
+    top: 100%; /* Aggiungi questo per fare in modo che il sottomenu esca sotto il menu principale */
+    left: 0;
 }
+
 
 .menu-box a {
     display: block;
