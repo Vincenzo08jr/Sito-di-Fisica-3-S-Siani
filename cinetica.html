@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energia Cinetica</title>
+    <link rel="stylesheet" href="CSS/stile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Neon+Tech&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="IMMAGINI/favicon.ico">
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <style>
+        .argomento-section {
+            background-color: #ffffffdd;
+            padding: 30px;
+            margin: 40px auto;
+            border-radius: 20px;
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+        }
+
+        .argomento-section h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #2980b9;
+            padding-bottom: 5px;
+        }
+
+        .calcolatore {
+            background-color: #e0f0ff;
+            padding: 15px;
+            border: 1px solid #99ccee;
+            border-radius: 8px;
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 8px;
+            margin: 6px 0;
+            box-sizing: border-box;
+        }
+
+        .esempio {
+            background-color: #f4f9fc;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            border: 1px solid #a3c6e2;
+        }
+
+        .esempio h3 {
+            color: #2980b9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #2980b9;
+            color: white;
+        }
+
+        .image {
+            max-width: 100%;
+            height: auto;
+            margin-top: 15px;
+            border-radius: 8px;
+        }
+
+        .esempio-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .esempio-item {
+            flex: 1;
+            min-width: 250px;
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- SEZIONE HERO -->
+    <div class="hero">
+        <img src="IMMAGINI/sfondo2.jpeg" alt="Sfondo" class="hero-img">
+        <div class="overlay">
+            <div class="top-bar">
+                <span>2025</span>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="chi-siamo.html">Chi siamo</a>
+                    <a href="crediti.html">Crediti</a> |
+                    <div class="menu-container">
+                        <span class="menu-icon">☰</span>
+                        <div class="menu-box">
+                            <a href="index.html">Home</a>
+                            <a href="1-principio.html">1° Principio della Dinamica</a>
+                            <a href="2-principio.html">2° Principio della Dinamica</a>
+                            <a href="3-principio.html">3° Principio della Dinamica</a>
+                            <a href="Forze.html">Forze conservative e dissipative</a>
+                            <a href="lavoro.html">Lavoro</a>
+                            <a href="cinetica.html">Energia cinetica</a>
+                            <a href="potenziale.html">Energia potenziale</a>
+                            <a href="meccanica.html">Energia meccanica</a>
+                            <a href="chicco.html">Storie di Chicco</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <h1 class="title">Energia Cinetica</h1>
+        </div>
+    </div>
+
+    <!-- SEZIONE CONTENUTO -->
+    <div class="argomento-section">
+        <h2>Cos'è l'Energia Cinetica?</h2>
+        <p>
+            L'energia cinetica è l'energia che un corpo possiede grazie al suo movimento. Essa dipende dalla massa dell'oggetto e dalla sua velocità. Più un oggetto è veloce e pesante, maggiore sarà la sua energia cinetica. L'energia cinetica è una forma di energia meccanica e si misura in joule (J).
+        </p>
+        <p>
+            La formula per calcolare l'energia cinetica è la seguente:
+        </p>
+        <p><strong>Formula:</strong> \( E_c = \frac{1}{2} m v^2 \)</p>
+        <p>
+            Dove:
+            <ul>
+                <li><strong>m</strong> è la massa dell'oggetto (in chilogrammi)</li>
+                <li><strong>v</strong> è la velocità dell'oggetto (in metri al secondo)</li>
+            </ul>
+        </p>
+        <p>
+            L'energia cinetica è direttamente proporzionale alla massa dell'oggetto e al quadrato della sua velocità. Questo significa che se la velocità di un oggetto raddoppia, la sua energia cinetica aumenterà di quattro volte.
+        </p>
+        <p>
+            Questa formula è utilizzata in fisica per comprendere e calcolare il movimento degli oggetti, dalla semplice palla che rotola a veicoli in movimento e persino corpi celesti.
+        </p>
+        <img src="https://www.physicsclassroom.com/Class/energy/u5l3b1.gif" alt="Esempio Energia Cinetica" class="image">
+
+        <div class="calcolatore">
+            <h2>Calcola l'Energia Cinetica</h2>
+            <form onsubmit="calcolaEnergia(); return false;">
+                <label for="massa">Massa (kg):</label>
+                <input type="number" id="massa" required step="any" placeholder="Esempio: 0.5">
+
+                <label for="velocita">Velocità (m/s):</label>
+                <input type="number" id="velocita" required step="any" placeholder="Esempio: 2">
+
+                <button type="submit">Calcola</button>
+            </form>
+            <p id="risultato"></p>
+        </div>
+
+        <!-- ESEMPI -->
+        <div class="esempio">
+            <h3>Esempi di Calcolo dell'Energia Cinetica</h3>
+            <p>Puoi cambiare i numeri nei seguenti problemi per calcolare l'energia cinetica con valori diversi!</p>
+            <div class="esempio-container">
+                <div class="esempio-item">
+                    <h4>Esempio 1: Palla che rotola</h4>
+                    <p>
+                        Una palla di 0.5 kg rotola a una velocità di 2 m/s. Qual è la sua energia cinetica?
+                    </p>
+                    <p><strong>Formula:</strong> \( E_c = \frac{1}{2} \cdot 0.5 \cdot 2^2 = 1 \, J \)</p>
+                    <img src="IMMAGINI/palla-rotola.png" alt="Palla che rotola" class="image">
+                </div>
+
+                <div class="esempio-item">
+                    <h4>Esempio 2: Automobile in movimento</h4>
+                    <p>
+                        Un'auto di 300 kg si muove a 3 m/s. Qual è la sua energia cinetica?
+                    </p>
+                    <p><strong>Formula:</strong> \( E_c = \frac{1}{2} \cdot 300 \cdot 3^2 = 1350 \, J \)</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Car_crash_simulation.gif/220px-Car_crash_simulation.gif" alt="Auto in movimento" class="image">
+                </div>
+
+                <div class="esempio-item">
+                    <h4>Esempio 3: Treno in corsa</h4>
+                    <p>
+                        Un treno di 20 kg viaggia a 4 m/s. Qual è la sua energia cinetica?
+                    </p>
+                    <p><strong>Formula:</strong> \( E_c = \frac{1}{2} \cdot 20 \cdot 4^2 = 160 \, J \)</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Freight_train_in_motion.gif/220px-Freight_train_in_motion.gif" alt="Treno in movimento" class="image">
+                </div>
+            </div>
+        </div>
+
+        <div class="esempio">
+            <h3>Esempi Difficili</h3>
+            <p>Questi esempi utilizzano numeri più grandi o concetti avanzati, ma puoi modificare i numeri per adattarli!</p>
+            <div class="esempio-container">
+                <div class="esempio-item">
+                    <h4>Esempio 1: Velocità della luce</h4>
+                    <p>
+                        Una particella di 0.0005 kg viaggia a 100 m/s. Qual è la sua energia cinetica?
+                    </p>
+                    <p><strong>Formula:</strong> \( E_c = \frac{1}{2} \cdot 0.0005 \cdot 100^2 = 2500 \, J \)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Energia Cinetica</p>
+    </footer>
+
+    <script>
+        function calcolaEnergia() {
+            const massa = parseFloat(document.getElementById('massa').value);
+            const velocita = parseFloat(document.getElementById('velocita').value);
+            const energia = 0.5 * massa * Math.pow(velocita, 2);
+            document.getElementById('risultato').textContent = `L'energia cinetica è: ${energia.toFixed(2)} J`;
+        }
+    </script>
+
+</body>
+</html>
