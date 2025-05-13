@@ -1,4 +1,3 @@
-
 <html lang="it">
 <head>
     <meta charset="UTF-8">
@@ -109,8 +108,6 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-        .top-bar {
-         text-color:black;
         }
     </style>
 </head>
@@ -239,6 +236,16 @@
 
     <button onclick="calcolaEnergia()">Calcola Energia Potenziale</button>
     <p id="risultato" style="margin-top: 15px; font-weight: bold;"></p>
+
+    <h2>Calcolatore Velocità e Tempo</h2>
+    <label for="velocità">Velocità (m/s):</label>
+    <input type="number" id="velocità" placeholder="Inserisci la velocità">
+
+    <label for="tempo">Tempo (s):</label>
+    <input type="number" id="tempo" placeholder="Inserisci il tempo">
+
+    <button onclick="calcolaVelocità()">Calcola Velocità o Tempo</button>
+    <p id="risultato-velocità" style="margin-top: 15px; font-weight: bold;"></p>
 </div>
 
 <script>
@@ -253,7 +260,24 @@
         }
 
         const energia = massa * gravità * altezza;
-        document.getElementById('risultato').innerText = `Energia Potenziale: ${energia.toFixed(2)} J`;
+        document.getElementById('risultato').innerText = document.getElementById('risultato').innerText = `Energia Potenziale: ${energia} Joule`;
+    }
+
+    function calcolaVelocità() {
+        const velocità = parseFloat(document.getElementById('velocità').value);
+        const tempo = parseFloat(document.getElementById('tempo').value);
+
+        if (isNaN(velocità) || isNaN(tempo)) {
+            document.getElementById('risultato-velocità').innerText = 'Inserisci tutti i valori correttamente.';
+            return;
+        }
+
+        if (velocità > 0 && tempo > 0) {
+            const distanza = velocità * tempo;
+            document.getElementById('risultato-velocità').innerText = `Distanza percorsa: ${distanza} metri`;
+        } else {
+            document.getElementById('risultato-velocità').innerText = 'I valori per velocità e tempo devono essere positivi.';
+        }
     }
 </script>
 
