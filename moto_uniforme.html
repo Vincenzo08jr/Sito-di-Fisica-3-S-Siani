@@ -1,4 +1,4 @@
-﻿ <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
@@ -7,9 +7,23 @@
   <link rel="stylesheet" href="CSS/stile.css">
   <link href="https://fonts.googleapis.com/css2?family=Neon+Tech&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="IMMAGINI/favicon.ico">
-  <script type="text/javascript" id="MathJax-script" async
-      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  
+  <!-- MATHJAX CORRETTO -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['\\[', '\\]'], ['$$', '$$']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
   </script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
   <style>
     .argomento-section {
       background-color: #ffffffdd;
@@ -93,7 +107,6 @@
                         <span class="menu-icon">☰</span>
                         <div class="menu-box">
                             <input type="text" id="search" placeholder="Cerca nel menu...">
-
                             <a href="index.html"><strong>HOME</strong></a>
 
                             <!-- PRIMO ANNO -->
@@ -131,14 +144,13 @@
                                 </div>
                             </div>
                             <div class="submenu">
-                                <a href=""Lavoro-Energia.html"><strong>LAVORO ED ENERGIE</strong></a>
+                                <a href="Lavoro-Energia.html"><strong>LAVORO ED ENERGIE</strong></a>
                                 <div class="submenu-box">
                                     <a href="Forze.html">Forze conservative e dissipative</a>
                                     <a href="lavoro.html">Lavoro</a>
                                     <a href="cinetica.html">Energia cinetica</a>
                                     <a href="potenziale.html">Energia potenziale</a>
                                     <a href="meccanica.html">Energia meccanica</a>
-                                    
                                 </div>
                             </div>
 
@@ -166,7 +178,6 @@
             </div>
 	  <h1 class="title">LaFisicAmica-CINEMATICA</h1>
       <h1 class="title">Il moto rettilineo uniforme</h1><br>
-		
     </div>
   </div>
 
@@ -202,23 +213,16 @@
       <em>➡ In assenza totale di attrito, non si fermerebbe mai.</em>
     </div>
 
+    <h2>📌 Presentazioni et al.</h2>
 
-
-
-  <h2>📌 Presentazioni et al.</h2>
-
-<div class="esempio">
+    <div class="esempio">
       <h3>🔹 Il moto rettilineo uniforme <a href="PPT/moto_rettilineo_uniforme.pdf">in PDF</a></h3>
     </div>	  
 
     <div class="esempio">
       <h3>🔹 Confronto tra due moti rettilinei uniformi <a href="EXCEL/moti_uniformi.xlsx">Scarica qui il foglio Excel</a></h3>
     </div>
-
-
   </div>
-</div>
-
 
 <script src="JS-AI/script.js"></script>
 
