@@ -7,22 +7,6 @@
   <link rel="stylesheet" href="CSS/stile.css">
   <link href="https://fonts.googleapis.com/css2?family=Neon+Tech&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="IMMAGINI/favicon.ico">
-  
-  <!-- MATHJAX CORRETTO -->
-  <script>
-    window.MathJax = {
-      tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']],
-        displayMath: [['\\[', '\\]'], ['$$', '$$']]
-      },
-      svg: {
-        fontCache: 'global'
-      }
-    };
-  </script>
-  <script id="MathJax-script" async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-  </script>
 
   <style>
     .argomento-section {
@@ -87,6 +71,14 @@
     th {
       background-color: #3498db;
       color: white;
+    }
+
+    .formula {
+      font-size: 1.4em;
+      font-weight: bold;
+      display: block;
+      text-align: center;
+      margin: 20px 0;
     }
   </style>
 </head>
@@ -190,7 +182,7 @@
 
     <h2>🧠 Spiegazione dettagliata</h2>
     <p>Nel MRU, la relazione fondamentale tra spazio, tempo e velocità è:</p>
-    <p style="text-align: center; font-size: 1.3em;">\\[ s = v \cdot t \\]</p>
+    <div class="formula">s = v × t</div>
     <p>dove:</p>
     <ul>
       <li><strong>s</strong> = spazio percorso (in metri, m)</li>
@@ -224,7 +216,7 @@
     </div>
   </div>
 
-<script src="JS-AI/script.js"></script>
+  <script src="JS-AI/script.js"></script>
 
   <!-- FOOTER -->
   <footer>
