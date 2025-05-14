@@ -1,5 +1,4 @@
-﻿
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
@@ -8,9 +7,8 @@
     <link rel="stylesheet" href="CSS/stile.css">
     <link rel="icon" type="image/x-icon" href="IMMAGINI/favicon.ico">
     <style>
-        /* Box bianca e formattazione */
         .content {
-            background-color: white; /* Colore della box */
+            background-color: white;
             padding: 20px;
             margin: 20px auto;
             width: 90%;
@@ -21,22 +19,33 @@
 
         .content h2 {
             text-align: center;
-            font-size: 24px;
-            margin-bottom: 20px;
+            font-size: 28px;
+            margin-bottom: 25px;
         }
 
-        .content p {
+        .link-button {
+            display: block;
+            background-color: #0077cc;
+            color: white;
+            padding: 12px 20px;
+            margin: 10px auto;
+            text-align: center;
+            width: fit-content;
+            border-radius: 8px;
+            text-decoration: none;
             font-size: 16px;
-            line-height: 1.6;
-            margin-bottom: 10px;
-            text-align: justify;
+            transition: background-color 0.3s ease;
+        }
+
+        .link-button:hover {
+            background-color: #005fa3;
         }
     </style>
 </head>
 <body>
 
-    <!-- SEZIONE HERO -->
-   <div class="hero">
+    <!-- HERO -->
+    <div class="hero">
         <img src="IMMAGINI/sfondo2.jpeg" alt="Sfondo" class="hero-img">
         <div class="overlay">
             <div class="top-bar">
@@ -49,16 +58,15 @@
                         <span class="menu-icon">☰</span>
                         <div class="menu-box">
                             <input type="text" id="search" placeholder="Cerca nel menu...">
-
                             <a href="index.html"><strong>HOME</strong></a>
 
-                            <!-- PRIMO ANNO -->
+                            <!-- 1° ANNO -->
                             <a href="#"><strong>1° ANNO</strong></a>
                             <a href="#">Misure e grandezze</a>
                             <a href="#">Sistemi di unità di misura</a>
                             <a href="#">Introduzione alla Fisica</a>
 
-                            <!-- SECONDO ANNO -->
+                            <!-- 2° ANNO -->
                             <a href="#"><strong>2° ANNO</strong></a>
                             <div class="submenu">
                                 <a href="ottica.html"><strong>OTTICA</strong></a>
@@ -69,7 +77,7 @@
                                 </div>
                             </div>
 
-                            <!-- TERZO ANNO -->
+                            <!-- 3° ANNO -->
                             <a href="#"><strong>3° ANNO</strong></a>
                             <div class="submenu">
                                 <a href="cinematica.html"><strong>CINEMATICA</strong></a>
@@ -87,25 +95,24 @@
                                 </div>
                             </div>
                             <div class="submenu">
-                                <a href=""Lavoro-Energia.html"><strong>LAVORO ED ENERGIE</strong></a>
+                                <a href="Lavoro-Energia.html"><strong>LAVORO ED ENERGIE</strong></a>
                                 <div class="submenu-box">
                                     <a href="Forze.html">Forze conservative e dissipative</a>
                                     <a href="lavoro.html">Lavoro</a>
                                     <a href="cinetica.html">Energia cinetica</a>
                                     <a href="potenziale.html">Energia potenziale</a>
                                     <a href="meccanica.html">Energia meccanica</a>
-                                    
                                 </div>
                             </div>
 
-                            <!-- QUARTO ANNO -->
+                            <!-- 4° ANNO -->
                             <a href="#"><strong>4° ANNO</strong></a>
                             <a href="#">Termodinamica</a>
                             <a href="#">Gas Perfetti</a>
                             <a href="#">Calore e temperatura</a>
                             <a href="#">Trasformazioni termodinamiche</a>
 
-                            <!-- QUINTO ANNO -->
+                            <!-- 5° ANNO -->
                             <a href="#"><strong>5° ANNO</strong></a>
                             <a href="#">Onde e suono</a>
                             <a href="#">Elettrostatica</a>
@@ -113,35 +120,27 @@
                             <a href="#">Campi magnetici</a>
 
                             <!-- EXTRA -->
-                             <a href="#"><strong>Extra</strong></a>
+                            <a href="#"><strong>Extra</strong></a>
                             <a href="chicco.html">Storie di Chicco</a>
-                             <a href="blog.html">Blog</a>
+                            <a href="blog.html">Blog</a>
                         </div>
                     </div>
                 </nav>
             </div>
-            <h1 class="title">LaFisicAmica-Blog</h1>
+            <h1 class="title">LaFisicAmica - Blog</h1>
         </div>
     </div>
 
-    <!-- SEZIONE CONTENUTO -->
+    <!-- CONTENUTO -->
     <div class="content">
-        <h2> Blog</h2>
-        <p>
-          Ecco il <a href="https://kekkorippa.altervista.org/">1 link</a>
-        </p>
-        <p>
-          Ecco il<a href="https://fisicadimaio.altervista.org/primo-principio-dinamica/">2 link</a>
-        </p>
-        <p>
-           Ecco il<a href="https://demarinisgiuseppe.altervista.org">3 link</a>
-        </p>
-        <p>
-           Ecco il<a href="https://chiccosito.altervista.org/wp-content/uploads/2025/05/index.html">4 link</a>
-        </p>
+        <h2>Blog della classe 3-S</h2>
+        <a class="link-button" href="https://kekkorippa.altervista.org/" target="_blank">Visita il blog di Kekko</a>
+        <a class="link-button" href="https://fisicadimaio.altervista.org/primo-principio-dinamica/" target="_blank">Primo principio - Di Maio</a>
+        <a class="link-button" href="https://demarinisgiuseppe.altervista.org" target="_blank">Sito di De Marinis</a>
+        <a class="link-button" href="https://chiccosito.altervista.org/wp-content/uploads/2025/05/index.html" target="_blank">Sito di Chicco</a>
     </div>
 
-<script src="JS-AI/script.js"></script>
+    <script src="JS-AI/script.js"></script>
 
     <!-- FOOTER -->
     <footer>
